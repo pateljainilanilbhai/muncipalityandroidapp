@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.MainActivity">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:gravity="center_vertical"
+        android:hint="username"
+        android:drawablePadding="5dp"
+        android:padding="3dp"
+        android:textColorHint="#060505"
+        android:id="@+id/txtusername1"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/txtuserpass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtuserpass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#060505"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txtusername1" />
+
+    <Button
+        android:id="@+id/userloginbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="25dp"
+        android:textColor="#060505"
+        android:background="#F18D9E"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/btnadmin"
+        android:layout_alignBottom="@+id/btnadmin"
+        android:layout_alignStart="@+id/regbtn1" />
+
+    <Button
+        android:id="@+id/regbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Register"
+        android:background="#15f4ee"
+        android:layout_below="@+id/txtuserpass"
+        android:layout_alignStart="@+id/txtuserpass"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="ADMIN"
+        android:id="@+id/btnadmin" android:textSize="25dp"
+        android:background="#F18D9E"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txtuserpass"
+        android:layout_marginBottom="52dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnadmin"
+        android:layout_marginTop="38dp" />
+
+
+</RelativeLayout>

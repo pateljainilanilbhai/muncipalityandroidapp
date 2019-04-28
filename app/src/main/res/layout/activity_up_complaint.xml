@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.up_complaint">
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColorHint="#FF101211"
+        android:id="@+id/txtupcomname"
+        android:hint="Name"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtupcomcontact" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:textColorHint="#FF101211"
+        android:id="@+id/txtupcomcontact"
+        android:hint="Contact"
+        android:layout_alignTop="@+id/txtupcomname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="56dp" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtupcomtype"
+        android:hint="Type"
+        android:textColorHint="#FF101211"
+        android:layout_below="@+id/txtupcomcontact"
+        android:layout_alignStart="@+id/txtupcomcontact"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtupcomdesc"
+        android:hint="Description"
+        android:textColorHint="#FF101211"
+        android:layout_below="@+id/txtupcomtype"
+        android:layout_alignStart="@+id/txtupcomtype"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtupcomstatus"
+        android:hint="Add Status"
+        android:textColorHint="#FF101211"
+        android:layout_below="@+id/txtupcomdesc"
+        android:layout_alignStart="@+id/txtupcomdesc"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/btnupcom"
+        android:onClick="run"
+        android:textSize="15dp"
+        android:background="#F18D9E"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/txtupcomstatus"
+        android:layout_alignStart="@+id/txtupcomstatus"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:textSize="15dp"
+        android:background="#F18D9E"
+        android:id="@+id/btnupcancel"
+        android:layout_alignBaseline="@+id/btnupcom"
+        android:layout_alignBottom="@+id/btnupcom"
+        android:layout_alignEnd="@+id/txtupcomstatus"
+        android:layout_marginEnd="22dp" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/newconnraw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person Name"
+        android:textSize="20dp"
+        android:textColor="#0b0b0b"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/newconnraw2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/newconnraw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="20dp"
+        android:textColor="#0b0b0b"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/newconnraw1"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/newconnraw3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Type"
+        android:textSize="20dp"
+        android:textColor="#0b0b0b"
+        android:layout_below="@+id/newconnraw1"
+        android:layout_alignStart="@+id/newconnraw1"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/newconnraw4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:textColor="#0b0b0b"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/newconnraw3"
+        android:layout_alignStart="@+id/newconnraw3" />
+</RelativeLayout>

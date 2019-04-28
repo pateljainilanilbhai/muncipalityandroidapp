@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.admin_login">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/adminemaileditText3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addminlogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="25dp"
+        android:background="#F18D9E"
+        android:textColor="#060505"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="15dp"
+        android:textColor="#060505"
+        android:layout_below="@+id/adminpass"
+        android:layout_alignEnd="@+id/adminemaileditText3" />
+
+    <EditText
+        android:id="@+id/adminemaileditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColorHint="#060505"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/adminpass"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:hint="Password"
+        android:textColorHint="#060505"
+        android:inputType="textPassword"
+        android:layout_below="@+id/adminemaileditText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>

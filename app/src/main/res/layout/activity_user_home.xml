@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.user_home">
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logout"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="442dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="18dp"
+        android:text="WELCOME"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/complaint"
+        android:layout_marginStart="23dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="130dp" />
+
+    <Button
+        android:id="@+id/btnwithdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/withdraw"
+        android:layout_below="@+id/imageView2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdraw"
+        android:textColor="#060505"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/btnwithdraw"
+        android:layout_alignEnd="@+id/btnwithdraw" />
+
+    <Button
+        android:id="@+id/btnstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status"
+        android:layout_above="@+id/userstatus1"
+        android:layout_alignStart="@+id/btnwithdraw"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/btnnewconn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add"
+        android:layout_above="@+id/textView8"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#060505"
+        android:text="NEW Registeration"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/munci"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button3"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:textColor="#060505"
+        android:textSize="15dp"
+        android:layout_below="@+id/btnwithdraw"
+        android:layout_alignStart="@+id/button3" />
+
+    <TextView
+        android:id="@+id/userstatus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:textSize="15dp"
+        android:textColor="#060505"
+        android:layout_toStartOf="@+id/button2"
+        android:text="Status" />
+
+
+</RelativeLayout>

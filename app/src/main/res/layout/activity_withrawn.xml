@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.Withrawn">
+    <EditText
+        android:id="@+id/withdwtxt"
+        android:layout_width="3000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:textColorHint="#FF131515"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Complaint/Registration no."
+        />
+
+    <Button
+        android:id="@+id/withdwbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Cancel"
+        android:background="#F18D9E"
+        android:textSize="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/withdwtxt"
+        android:layout_alignEnd="@+id/withdwtxt" />
+
+    <Button
+        android:id="@+id/withdwbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="withdraw"
+        android:background="#F18D9E"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/withdwbtn1"
+        android:layout_alignBottom="@+id/withdwbtn1"
+        android:layout_toStartOf="@+id/withdwbtn1"
+        android:layout_marginEnd="23dp" />
+</RelativeLayout>

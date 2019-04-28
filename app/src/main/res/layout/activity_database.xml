@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.database">
+
+    <Button
+        android:id="@+id/dbmanagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="#F18D9E"
+        android:layout_marginTop="112dp"
+        android:text="Complain"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/dbnewbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:background="#F18D9E"
+        android:textSize="20dp"
+        android:text="New Connection"
+        android:layout_below="@+id/managebutton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

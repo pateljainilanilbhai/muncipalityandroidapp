@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.registration">
+
+    <EditText
+        android:id="@+id/regisname"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textColorHint="#060606"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/regisadd" />
+
+    <EditText
+        android:id="@+id/regispass"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:textColorHint="#060606"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/regismail"
+        android:layout_alignStart="@+id/regismail" />
+
+    <Button
+        android:id="@+id/regisbtn1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:background="#F18D9E"
+        android:text="Register"
+        android:layout_below="@+id/regisadd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <EditText
+        android:id="@+id/regisadd"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:textColorHint="#060606"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/regismail"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColorHint="#060606"
+        android:inputType="textPersonName"
+        android:hint="email"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/regisname"
+        android:layout_alignStart="@+id/regisname" />
+
+
+</RelativeLayout>

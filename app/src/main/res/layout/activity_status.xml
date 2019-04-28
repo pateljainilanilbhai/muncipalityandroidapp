@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.status">
+    <EditText
+        android:id="@+id/statustxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp"
+        android:textColorHint="#FF121111"
+        android:inputType="textPersonName"
+        android:hint="Complaint/Registration no."
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:id="@+id/statusbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="20dp"
+        android:background="#F18D9E"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:layout_alignBaseline="@+id/statusbtn2"
+        android:layout_alignBottom="@+id/statusbtn2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp" />
+
+    <Button
+        android:id="@+id/statusbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="cancel"
+        android:background="#F18D9E"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="295dp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/statustxt"
+        android:layout_toEndOf="@+id/statusbtn1"
+        android:layout_marginStart="37dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="status"
+        android:id="@+id/sttxtview"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignEnd="@+id/statusbtn2"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Status Is:"
+        android:textSize="20dp"
+        android:textColor="#FF121111"
+        android:layout_below="@+id/statusbtn1"
+        android:layout_alignStart="@+id/statusbtn1"
+        android:layout_marginTop="73dp" />
+</RelativeLayout>

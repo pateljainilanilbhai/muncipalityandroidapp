@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#15f4ee"
+    tools:context="com.example.mi.muncipality.new_connection">
+    <TextView
+        android:id="@+id/regname"
+        android:layout_width="183dp"
+        android:layout_height="30dp"
+        android:text="Person Name"
+        android:textColor="#060505"
+        android:textSize="20dp"
+        android:inputType="phone"
+        android:ems="10"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/regtxt"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteY="41dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_below="@+id/regname"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/regphn"
+        android:layout_width="183dp"
+        android:layout_height="30dp"
+        android:text="Phone number"
+        android:textSize="20dp"
+        android:textColor="#060505"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp"
+        android:layout_below="@+id/regtxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/regnum"
+        android:layout_width="400dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/regtyp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/regtyp"
+        android:layout_width="183dp"
+        android:layout_height="30dp"
+        android:text="Registration type"
+        android:textSize="20dp"
+        android:textColor="#060505"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_above="@+id/reglist"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/reglist"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        android:clickable="true"
+        android:dropDownWidth="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="220dp"
+        android:layout_above="@+id/regdesc"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/regdesc"
+        android:layout_width="400dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Description"
+        android:textColorHint="#060505"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_above="@+id/regunknow"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/regunknow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unknown"
+        android:textSize="20dp"
+        android:textColor="#060505"
+        tools:layout_editor_absoluteY="351dp"
+        tools:layout_editor_absoluteX="110dp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/regpost1"
+        android:layout_alignEnd="@+id/regtyp" />
+
+    <Button
+        android:id="@+id/regpost1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registration"
+        android:textSize="20dp"
+        android:background="#F18D9E"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/regcancle"
+        android:layout_alignBottom="@+id/regcancle"
+        android:layout_alignEnd="@+id/regtyp"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:id="@+id/regcancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="#F18D9E"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteY="399dp"
+        tools:layout_editor_absoluteX="179dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/regunknow"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/regunknow"
+        android:layout_alignParentStart="true"
+        android:text="Status"
+        android:textColor="#060505"
+        android:textSize="20dp"
+        android:layout_below="@+id/regdesc" />
+
+</RelativeLayout>

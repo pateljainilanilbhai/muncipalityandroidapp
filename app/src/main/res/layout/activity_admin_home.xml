@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#46d7ce"
+    tools:context="com.example.mi.muncipality.admin_home">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/munci"
+        android:layout_above="@+id/adminbtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/adminbtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/notification"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/usermessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adminbtn"
+        android:layout_alignTop="@+id/adminbtn"
+        android:layout_marginTop="62dp"
+        android:text="Message"
+        android:textSize="15dp"
+        android:textColor="#060505"/>
+
+    <Button
+        android:id="@+id/userdatabtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/report"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/adminbtn"
+        android:layout_marginEnd="28dp" />
+
+    <TextView
+        android:id="@+id/admindatatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/userdatabtn"
+        android:layout_below="@+id/userdatabtn"
+        android:text="Database"
+        android:textColor="#060505"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/adminmanagebtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/manage"
+        android:layout_alignEnd="@+id/usermessage"
+        android:layout_below="@+id/admindatatxt"
+        android:layout_marginTop="23dp"
+        />
+
+    <TextView
+        android:id="@+id/adminmanagetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adminmanagebtn"
+        android:layout_below="@+id/adminmanagebtn"
+        android:text="  Manage"
+        android:textColor="#060505"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/userstatusbtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/update"
+        android:layout_alignBottom="@+id/adminmanagebtn"
+        android:layout_alignEnd="@+id/userdatabtn"
+        />
+
+    <TextView
+        android:id="@+id/adminudatetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#060505"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/adminmanagetxt"
+        android:layout_alignEnd="@+id/admindatatxt"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/adminlogout"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
